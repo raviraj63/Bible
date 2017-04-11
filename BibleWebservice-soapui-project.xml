@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="38062a2b-a693-447b-ac59-0456952f1ed6" activeEnvironment="Default" name="BibleWebservice" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="9781a846-4084-4c3e-8afd-e14b5c6743ed" wsaVersion="NONE" name="BibleWebserviceSoap" type="wsdl" bindingName="{http://www.webserviceX.NET}BibleWebserviceSoap" soapVersion="1_1" anonymous="optional" definition="http://www.webservicex.com/BibleWebservice.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.webservicex.com/BibleWebservice.asmx</con:endpoint></con:endpoints><con:operation id="932bf30d-49b7-468b-9588-2ada2e6c20a7" isOneWay="false" action="http://www.webserviceX.NET/GetBibleWordsByBookTitleAndChapter" name="GetBibleWordsByBookTitleAndChapter" bindingOperationName="GetBibleWordsByBookTitleAndChapter" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="46f19638-f7fd-4899-b690-49b4bb6e77d3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.com/BibleWebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetBibleWordsByBookTitleAndChapter>\r
+         <!--Optional:-->\r
+         <web:BookTitle>?</web:BookTitle>\r
+         <web:chapter>?</web:chapter>\r
+      </web:GetBibleWordsByBookTitleAndChapter>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetBibleWordsByBookTitleAndChapter"/></con:call></con:operation><con:operation id="b8ed8028-433d-48b6-826d-4997a74c8e3e" isOneWay="false" action="http://www.webserviceX.NET/GetBibleWordsByChapterAndVerse" name="GetBibleWordsByChapterAndVerse" bindingOperationName="GetBibleWordsByChapterAndVerse" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9d8789ad-8684-4393-92c6-5c84d3f817d1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.com/BibleWebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetBibleWordsByChapterAndVerse>\r
+         <!--Optional:-->\r
+         <web:BookTitle>?</web:BookTitle>\r
+         <web:chapter>?</web:chapter>\r
+         <web:Verse>?</web:Verse>\r
+      </web:GetBibleWordsByChapterAndVerse>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetBibleWordsByChapterAndVerse"/></con:call></con:operation><con:operation id="ad4382c3-09a3-4757-b39a-ec9764a86f9a" isOneWay="false" action="http://www.webserviceX.NET/GetBibleWordsbyKeyWord" name="GetBibleWordsbyKeyWord" bindingOperationName="GetBibleWordsbyKeyWord" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="db874ed2-deab-49c2-9bd7-16b0123492df" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.com/BibleWebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetBibleWordsbyKeyWord>\r
+         <!--Optional:-->\r
+         <web:BibleWords>?</web:BibleWords>\r
+      </web:GetBibleWordsbyKeyWord>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetBibleWordsbyKeyWord"/></con:call></con:operation><con:operation id="6b2a2ac9-ce4f-4e91-82cc-4c7c91d549c9" isOneWay="false" action="http://www.webserviceX.NET/GetBookTitles" name="GetBookTitles" bindingOperationName="GetBookTitles" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3f882c82-f352-479d-aeb6-b08cbe823a60" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.com/BibleWebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetBookTitles/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetBookTitles"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="7af9b249-4f84-4dcb-8826-014136ced4bf" wsaVersion="NONE" name="BibleWebserviceSoap12" type="wsdl" bindingName="{http://www.webserviceX.NET}BibleWebserviceSoap12" soapVersion="1_2" anonymous="optional" definition="http://www.webservicex.com/BibleWebservice.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://www.webservicex.com/BibleWebservice.asmx?wsdl"><con:part><con:url>http://www.webservicex.com/BibleWebservice.asmx?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.webserviceX.NET" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.webserviceX.NET" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.webserviceX.NET">
+      <s:element name="GetBibleWordsByChapterAndVerse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BookTitle" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="chapter" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Verse" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBibleWordsByChapterAndVerseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBibleWordsByChapterAndVerseResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBibleWordsbyKeyWord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BibleWords" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBibleWordsbyKeyWordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBibleWordsbyKeyWordResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBookTitles">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetBookTitlesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBookTitlesResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBibleWordsByBookTitleAndChapter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BookTitle" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="chapter" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBibleWordsByBookTitleAndChapterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBibleWordsByBookTitleAndChapterResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string"/>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetBibleWordsByChapterAndVerseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBibleWordsByChapterAndVerse"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsByChapterAndVerseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBibleWordsByChapterAndVerseResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsbyKeyWordSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBibleWordsbyKeyWord"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsbyKeyWordSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBibleWordsbyKeyWordResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetBookTitlesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBookTitles"/>
+  </wsdl:message>
+  <wsdl:message name="GetBookTitlesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBookTitlesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsByBookTitleAndChapterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBibleWordsByBookTitleAndChapter"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsByBookTitleAndChapterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBibleWordsByBookTitleAndChapterResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsByChapterAndVerseHttpGetIn">
+    <wsdl:part name="BookTitle" type="s:string"/>
+    <wsdl:part name="chapter" type="s:string"/>
+    <wsdl:part name="Verse" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsByChapterAndVerseHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsbyKeyWordHttpGetIn">
+    <wsdl:part name="BibleWords" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsbyKeyWordHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBookTitlesHttpGetIn"/>
+  <wsdl:message name="GetBookTitlesHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsByBookTitleAndChapterHttpGetIn">
+    <wsdl:part name="BookTitle" type="s:string"/>
+    <wsdl:part name="chapter" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsByBookTitleAndChapterHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsByChapterAndVerseHttpPostIn">
+    <wsdl:part name="BookTitle" type="s:string"/>
+    <wsdl:part name="chapter" type="s:string"/>
+    <wsdl:part name="Verse" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsByChapterAndVerseHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsbyKeyWordHttpPostIn">
+    <wsdl:part name="BibleWords" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsbyKeyWordHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBookTitlesHttpPostIn"/>
+  <wsdl:message name="GetBookTitlesHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsByBookTitleAndChapterHttpPostIn">
+    <wsdl:part name="BookTitle" type="s:string"/>
+    <wsdl:part name="chapter" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBibleWordsByBookTitleAndChapterHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:portType name="BibleWebserviceSoap">
+    <wsdl:operation name="GetBibleWordsByChapterAndVerse">
+      <wsdl:documentation>This web service list all versus by Book Title ,Chapter and Verse from the Kings James version Bible</wsdl:documentation>
+      <wsdl:input message="tns:GetBibleWordsByChapterAndVerseSoapIn"/>
+      <wsdl:output message="tns:GetBibleWordsByChapterAndVerseSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBibleWordsbyKeyWord">
+      <wsdl:documentation>This web service list all versus by keyword from the Kings James version Bible</wsdl:documentation>
+      <wsdl:input message="tns:GetBibleWordsbyKeyWordSoapIn"/>
+      <wsdl:output message="tns:GetBibleWordsbyKeyWordSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookTitles">
+      <wsdl:documentation>This web service list all books from the Kings James version Bible</wsdl:documentation>
+      <wsdl:input message="tns:GetBookTitlesSoapIn"/>
+      <wsdl:output message="tns:GetBookTitlesSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBibleWordsByBookTitleAndChapter">
+      <wsdl:documentation>This web service list all versus by Book Title and Chapter from the Kings James version Bible</wsdl:documentation>
+      <wsdl:input message="tns:GetBibleWordsByBookTitleAndChapterSoapIn"/>
+      <wsdl:output message="tns:GetBibleWordsByBookTitleAndChapterSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="BibleWebserviceHttpGet">
+    <wsdl:operation name="GetBibleWordsByChapterAndVerse">
+      <wsdl:documentation>This web service list all versus by Book Title ,Chapter and Verse from the Kings James version Bible</wsdl:documentation>
+      <wsdl:input message="tns:GetBibleWordsByChapterAndVerseHttpGetIn"/>
+      <wsdl:output message="tns:GetBibleWordsByChapterAndVerseHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBibleWordsbyKeyWord">
+      <wsdl:documentation>This web service list all versus by keyword from the Kings James version Bible</wsdl:documentation>
+      <wsdl:input message="tns:GetBibleWordsbyKeyWordHttpGetIn"/>
+      <wsdl:output message="tns:GetBibleWordsbyKeyWordHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookTitles">
+      <wsdl:documentation>This web service list all books from the Kings James version Bible</wsdl:documentation>
+      <wsdl:input message="tns:GetBookTitlesHttpGetIn"/>
+      <wsdl:output message="tns:GetBookTitlesHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBibleWordsByBookTitleAndChapter">
+      <wsdl:documentation>This web service list all versus by Book Title and Chapter from the Kings James version Bible</wsdl:documentation>
+      <wsdl:input message="tns:GetBibleWordsByBookTitleAndChapterHttpGetIn"/>
+      <wsdl:output message="tns:GetBibleWordsByBookTitleAndChapterHttpGetOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="BibleWebserviceHttpPost">
+    <wsdl:operation name="GetBibleWordsByChapterAndVerse">
+      <wsdl:documentation>This web service list all versus by Book Title ,Chapter and Verse from the Kings James version Bible</wsdl:documentation>
+      <wsdl:input message="tns:GetBibleWordsByChapterAndVerseHttpPostIn"/>
+      <wsdl:output message="tns:GetBibleWordsByChapterAndVerseHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBibleWordsbyKeyWord">
+      <wsdl:documentation>This web service list all versus by keyword from the Kings James version Bible</wsdl:documentation>
+      <wsdl:input message="tns:GetBibleWordsbyKeyWordHttpPostIn"/>
+      <wsdl:output message="tns:GetBibleWordsbyKeyWordHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookTitles">
+      <wsdl:documentation>This web service list all books from the Kings James version Bible</wsdl:documentation>
+      <wsdl:input message="tns:GetBookTitlesHttpPostIn"/>
+      <wsdl:output message="tns:GetBookTitlesHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBibleWordsByBookTitleAndChapter">
+      <wsdl:documentation>This web service list all versus by Book Title and Chapter from the Kings James version Bible</wsdl:documentation>
+      <wsdl:input message="tns:GetBibleWordsByBookTitleAndChapterHttpPostIn"/>
+      <wsdl:output message="tns:GetBibleWordsByBookTitleAndChapterHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BibleWebserviceSoap" type="tns:BibleWebserviceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetBibleWordsByChapterAndVerse">
+      <soap:operation soapAction="http://www.webserviceX.NET/GetBibleWordsByChapterAndVerse" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBibleWordsbyKeyWord">
+      <soap:operation soapAction="http://www.webserviceX.NET/GetBibleWordsbyKeyWord" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookTitles">
+      <soap:operation soapAction="http://www.webserviceX.NET/GetBookTitles" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBibleWordsByBookTitleAndChapter">
+      <soap:operation soapAction="http://www.webserviceX.NET/GetBibleWordsByBookTitleAndChapter" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BibleWebserviceSoap12" type="tns:BibleWebserviceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetBibleWordsByChapterAndVerse">
+      <soap12:operation soapAction="http://www.webserviceX.NET/GetBibleWordsByChapterAndVerse" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBibleWordsbyKeyWord">
+      <soap12:operation soapAction="http://www.webserviceX.NET/GetBibleWordsbyKeyWord" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookTitles">
+      <soap12:operation soapAction="http://www.webserviceX.NET/GetBookTitles" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBibleWordsByBookTitleAndChapter">
+      <soap12:operation soapAction="http://www.webserviceX.NET/GetBibleWordsByBookTitleAndChapter" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BibleWebserviceHttpGet" type="tns:BibleWebserviceHttpGet">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="GetBibleWordsByChapterAndVerse">
+      <http:operation location="/GetBibleWordsByChapterAndVerse"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBibleWordsbyKeyWord">
+      <http:operation location="/GetBibleWordsbyKeyWord"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookTitles">
+      <http:operation location="/GetBookTitles"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBibleWordsByBookTitleAndChapter">
+      <http:operation location="/GetBibleWordsByBookTitleAndChapter"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BibleWebserviceHttpPost" type="tns:BibleWebserviceHttpPost">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="GetBibleWordsByChapterAndVerse">
+      <http:operation location="/GetBibleWordsByChapterAndVerse"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBibleWordsbyKeyWord">
+      <http:operation location="/GetBibleWordsbyKeyWord"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookTitles">
+      <http:operation location="/GetBookTitles"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBibleWordsByBookTitleAndChapter">
+      <http:operation location="/GetBibleWordsByBookTitleAndChapter"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BibleWebservice">
+    <wsdl:port name="BibleWebserviceSoap" binding="tns:BibleWebserviceSoap">
+      <soap:address location="http://www.webservicex.com/BibleWebservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="BibleWebserviceSoap12" binding="tns:BibleWebserviceSoap12">
+      <soap12:address location="http://www.webservicex.com/BibleWebservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="BibleWebserviceHttpGet" binding="tns:BibleWebserviceHttpGet">
+      <http:address location="http://www.webservicex.com/BibleWebservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="BibleWebserviceHttpPost" binding="tns:BibleWebserviceHttpPost">
+      <http:address location="http://www.webservicex.com/BibleWebservice.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.webservicex.com/BibleWebservice.asmx</con:endpoint></con:endpoints><con:operation id="625eee9c-21a3-47ba-bb39-35dd523deaec" isOneWay="false" action="http://www.webserviceX.NET/GetBibleWordsByBookTitleAndChapter" name="GetBibleWordsByBookTitleAndChapter" bindingOperationName="GetBibleWordsByBookTitleAndChapter" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b85369a5-32dd-42fc-9df6-bb2644688d30" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.com/BibleWebservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetBibleWordsByBookTitleAndChapter>\r
+         <!--Optional:-->\r
+         <web:BookTitle>?</web:BookTitle>\r
+         <web:chapter>?</web:chapter>\r
+      </web:GetBibleWordsByBookTitleAndChapter>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/BibleWebserviceSoap/GetBibleWordsByBookTitleAndChapterRequest"/></con:call></con:operation><con:operation id="fa51953c-2298-4363-a06c-ed927a341cda" isOneWay="false" action="http://www.webserviceX.NET/GetBibleWordsByChapterAndVerse" name="GetBibleWordsByChapterAndVerse" bindingOperationName="GetBibleWordsByChapterAndVerse" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="74f263cd-4445-4ef4-be64-1978afd4cd14" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.com/BibleWebservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetBibleWordsByChapterAndVerse>\r
+         <!--Optional:-->\r
+         <web:BookTitle>?</web:BookTitle>\r
+         <web:chapter>?</web:chapter>\r
+         <web:Verse>?</web:Verse>\r
+      </web:GetBibleWordsByChapterAndVerse>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/BibleWebserviceSoap/GetBibleWordsByChapterAndVerseRequest"/></con:call></con:operation><con:operation id="d5e3fae5-4135-44a8-ae47-50b5659be632" isOneWay="false" action="http://www.webserviceX.NET/GetBibleWordsbyKeyWord" name="GetBibleWordsbyKeyWord" bindingOperationName="GetBibleWordsbyKeyWord" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="737fa768-d7f7-49b5-b316-3ff1bce57e7d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.com/BibleWebservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetBibleWordsbyKeyWord>\r
+         <!--Optional:-->\r
+         <web:BibleWords>?</web:BibleWords>\r
+      </web:GetBibleWordsbyKeyWord>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/BibleWebserviceSoap/GetBibleWordsbyKeyWordRequest"/></con:call></con:operation><con:operation id="20318aac-b437-4aaf-9d0a-308ebb45e605" isOneWay="false" action="http://www.webserviceX.NET/GetBookTitles" name="GetBookTitles" bindingOperationName="GetBookTitles" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5f7e146f-16e8-488a-9fca-c05eb7125f67" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.com/BibleWebservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetBookTitles/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/BibleWebserviceSoap/GetBookTitlesRequest"/></con:call></con:operation></con:interface><con:testSuite id="1b1cb105-a407-4a76-ad94-5266c36b6665" name="TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="9f95d04e-ae25-4dc1-b7ba-74460fe68f43" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="Step1" id="22a9bafb-8cab-4023-9bfb-0a5205ff41fa"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BibleWebserviceSoap</con:interface><con:operation>GetBibleWordsByBookTitleAndChapter</con:operation><con:request name="Step1" id="64ca267f-be12-4c19-9e5b-8e9b2ca8fa1b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.com/BibleWebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetBibleWordsByBookTitleAndChapter>\r
+         <web:chapter>1</web:chapter>\r
+      </web:GetBibleWordsByBookTitleAndChapter>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="856444db-62fa-4a56-85bf-5c3c2b473f61"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
